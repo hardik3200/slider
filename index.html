@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>text</title>
+</head>
+<body>
+
+	<!-- slider section start -->
+
+<div class="slider-section container">
+	<div class="owl-carousel owl-theme">
+		<div class="item">
+			<div class="slide">
+				<img src="images/IMG_20230805_180951.jpg" alt="">
+		
+</div>
+
+</div>
+<div class="item">
+			<div class="slide">
+				<img src="images/IMG_20230805_180951.jpg" alt="">
+		
+</div>
+
+</div>
+<div class="item">
+			<div class="slide">
+				<img src="images/IMG_20230805_180951.jpg"  alt="">
+		
+</div>
+
+</div>
+
+
+</div>
+</div>
+<!-- slider section end -->
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+  var owl = $(".owl-carousel ");
+
+  owl.owlCarousel({
+    center: true,
+    nav: true,
+    items: 3,
+    stagePadding:200,
+    loop: true,
+    margin: 50,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+        stagePadding:200,
+        margin:10,
+      },
+      600: {
+        items: 3,
+        nav: true
+      }
+     
+    },
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: "URLHash"
+  });
+
+  owl.on("mousewheel", ".owl-stage", function (e) {
+    if (e.originalEvent.wheelDelta > 0) {
+      owl.trigger("next.owl");
+    } else {
+      owl.trigger("prev.owl");
+    }
+    e.preventDefault();
+  });
+
+
+});
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
